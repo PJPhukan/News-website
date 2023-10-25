@@ -1,0 +1,97 @@
+{
+    "status": "ok",
+    "totalResults": 7,
+    "articles": [
+        {
+            "source": {
+                "id": "news24",
+                "name": "News24"
+            },
+            "author": "Herman Mostert",
+            "title": "5 talking points | Proteas well-placed for World Cup semis, Aussies forget 'catches win matches'",
+            "description": "Herman Mostert highlights five talking points after South Africa's 134-run Cricket World Cup win over Australia in Lucknow, India.",
+            "url": "https://www.news24.com/sport/cricket/worldcup/5-talking-points-proteas-well-placed-for-world-cup-semis-aussies-forget-that-catches-win-matches-20231013",
+            "urlToImage": "https://cdn.24.co.za/files/Cms/General/d/9308/2ae482a057f14d05a9fc02a3367a89f8.jpg",
+            "publishedAt": "2023-10-13T14:00:25",
+            "content": "Classy De Kock lays perfect foundation for Proteas\r\nProteas opener Quinton de Kock notched his second century in a row in the Cricket World Cup.\r\nThe classy left-hander's measured 109 off 106 balls l… [+77 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-sport",
+                "name": "BBC Sport"
+            },
+            "author": null,
+            "title": "England and Essex legend Cook retires from cricket",
+            "description": "England and Essex legend Alastair Cook announces his retirement from professional cricket, ending a record-breaking 20-year career.",
+            "url": "http://www.bbc.co.uk/sport/cricket/67023224",
+            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/170D3/production/_131391449_alastaircook.jpg",
+            "publishedAt": "2023-10-13T13:07:23.7890617Z",
+            "content": "Alastair Cook ends his career with 26,643 runs from 352 first-class matches\r\nEngland and Essex legend Alastair Cook has announced his retirement from professional cricket, ending a record-breaking 20… [+5231 chars]"
+        },
+        {
+            "source": {
+                "id": "cbc-news",
+                "name": "CBC News"
+            },
+            "author": "CBC News",
+            "title": "IOC board approves new sports, including cricket & flag football, for L.A. 2028 Games | CBC Sports",
+            "description": "Five sports, including cricket and flag football, proposed for inclusion at the Los Angeles 2028 Olympics were approved by the International Olympic Committee executive board on Friday in Mumbai, India, leaving them with one last hurdle to seal their Olympic …",
+            "url": "http://www.cbc.ca/sports/olympics/new-sports-los-angeles-olympics-2028-update-1.6994966",
+            "urlToImage": "https://i.cbc.ca/1.6990909.1696868253!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/football-generic-05012013.jpg",
+            "publishedAt": "2023-10-13T13:07:21.8509049Z",
+            "content": "Five sports, including cricket and flag football, proposed for inclusion at the Los Angeles 2028 Olympics were approved by the International Olympic Committee executive board on Friday in Mumbai, Ind… [+2974 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-sport",
+                "name": "BBC Sport"
+            },
+            "author": null,
+            "title": "'What a start!' - NZ's Boult takes wicket with first ball",
+            "description": "New Zealand bowler Trent Boult dismisses Bangladesh batter Liton Das with the first ball of their Cricket World Cup match in Chennai.",
+            "url": "http://www.bbc.co.uk/sport/av/cricket/67099296",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/A3AD/production/_131410914_p0gl954q.jpg",
+            "publishedAt": "2023-10-13T09:07:24.2731203Z",
+            "content": "New Zealand bowler Trent Boult dismisses Bangladesh batter Liton Das with the first ball of their Cricket World Cup match in Chennai.\r\nFOLLOW LIVE:Bangladesh v New Zealand\r\nAvailable to UK users only."
+        },
+        {
+            "source": {
+                "id": "bbc-sport",
+                "name": "BBC Sport"
+            },
+            "author": null,
+            "title": "World Cup: New Zealand v Bangladesh - clips, radio & text",
+            "description": "Follow live text, in-play video clips and radio commentary as New Zealand play Bangladesh in the Men's Cricket World Cup 2023.",
+            "url": "http://www.bbc.co.uk/sport/live/cricket/66854573",
+            "urlToImage": "https:////m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.23.3/images/bbc-sport-logo.png",
+            "publishedAt": "2023-10-13T08:52:17.179927Z",
+            "content": "Bangladesh: Litton Das, Tanzid Hasan, Najmul Hossain Shanto, Shakib Al Hasan (captain), Mehidy Hasan Miraz, Mushfiqur Rahim (wicketkeeper), Towhid Hridoy, Mahmudullah, Taskin Ahmed, Shoriful Islam, M… [+221 chars]"
+        },
+        {
+            "source": {
+                "id": "espn-cric-info",
+                "name": "ESPN Cric Info"
+            },
+            "author": null,
+            "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
+            "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
+            "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
+            "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
+            "publishedAt": "2020-04-27T11:41:47Z",
+            "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
+        },
+        {
+            "source": {
+                "id": "espn-cric-info",
+                "name": "ESPN Cric Info"
+            },
+            "author": null,
+            "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
+            "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
+            "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
+            "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
+            "publishedAt": "2020-03-30T15:26:05Z",
+            "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
+        }
+    ]
+}
