@@ -1,8 +1,20 @@
 import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
+import PropTypes from "prop-types";
 
 export default class News extends Component {
+  static defaultProps = {
+    country: "in",
+    pageSize: 18,
+    category:"gereral"
+  };
+   PropTypes = {
+    country:PropTypes.string,
+    pageSize:PropTypes.number,
+    category: PropTypes.string
+  };
+
   constructor() {
     super();
 
@@ -14,7 +26,7 @@ export default class News extends Component {
   }
 
   async componentDidMount(e) {
-    const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=a77010d6d7204f25b584d678362aca6b&pageSize=${this.props.pageSize}&page=${this.state.page}`;
+    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=a77010d6d7204f25b584d678362aca6b&pageSize=${this.props.pageSize}&page=${this.state.page}`;
     this.setState({ loading: true });
     let data = await fetch(url);
     let parseData = await data.json();
@@ -30,7 +42,9 @@ export default class News extends Component {
   // previous and next button section
 
   HandlePreviousClick = async () => {
-    const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=a77010d6d7204f25b584d678362aca6b&pageSize=$pageSize}&page=${
+    const url = `https://newsapi.org/v2/top-headlines?country=${
+      this.props.country
+    }&category=${this.props.category}&apiKey=a77010d6d7204f25b584d678362aca6b&pageSize=$pageSize}&page=${
       this.state.page - 1
     }`;
     this.setState({ loading: true });
@@ -49,7 +63,9 @@ export default class News extends Component {
       Math.ceil(this.state.totalResult / this.props.pageSize)
     ) {
     } else {
-      const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=a77010d6d7204f25b584d678362aca6b&pageSize=${
+      const url = `https://newsapi.org/v2/top-headlines?country=${
+        this.props.country
+      }&category=${this.props.category}&apiKey=a77010d6d7204f25b584d678362aca6b&pageSize=${
         this.props.pageSize
       }&page=${this.state.page + 1}`;
       this.setState({ loading: true });
