@@ -99,7 +99,10 @@ export default class News extends Component {
                         : " "
                     }
                     imageUrl={element.urlToImage}
-                    newsUrl={element.url}
+                    ewsUrl={element.url}
+                    author={element.author}
+                    upDate={element.publishedAt.slice(0,10)}
+                    source={element.source.name}
                   />
                 </div>
               );
