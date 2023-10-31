@@ -15,14 +15,22 @@ export default class News extends Component {
     category: PropTypes.string
   };
 
-  constructor() {
-    super();
+  
+
+  capitalizeFLetter(string) {
+  
+  return (string[0].toUpperCase() +
+    string.slice(1));
+}
+  constructor(props) {
+    super(props);
 
     this.state = {
       article: [],
       loading: false,
       page: 1,
     };
+    document.title = `NewMonkey-${this.capitalizeFLetter(this.props.category)}`
   }
 
   async UpdateNews() {
