@@ -7,11 +7,11 @@ export default class News extends Component {
   static defaultProps = {
     country: "in",
     pageSize: 18,
-    category:"gereral"
+    category: "gereral"
   };
-   PropTypes = {
-    country:PropTypes.string,
-    pageSize:PropTypes.number,
+  PropTypes = {
+    country: PropTypes.string,
+    pageSize: PropTypes.number,
     category: PropTypes.string
   };
 
@@ -25,36 +25,29 @@ export default class News extends Component {
     };
   }
 
-  async componentDidMount(e) {
+  async UpdateNews() {
     const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=a77010d6d7204f25b584d678362aca6b&pageSize=${this.props.pageSize}&page=${this.state.page}`;
     this.setState({ loading: true });
     let data = await fetch(url);
     let parseData = await data.json();
-    // console.log(parseData);
     this.setState({
       article: parseData.articles,
       totalResult: parseData.totalResults,
       loading: false,
     });
-    // console.log(this.state.totalResult)
+    console.log(this.state.totalResult)
+  }
+
+  async componentDidMount(e) {
+ 
+    this.UpdateNews();
   }
 
   // previous and next button section
 
   HandlePreviousClick = async () => {
-    const url = `https://newsapi.org/v2/top-headlines?country=${
-      this.props.country
-    }&category=${this.props.category}&apiKey=a77010d6d7204f25b584d678362aca6b&pageSize=$pageSize}&page=${
-      this.state.page - 1
-    }`;
-    this.setState({ loading: true });
-    let data = await fetch(url);
-    let parseData = await data.json();
-    this.setState({
-      page: this.state.page - 1,
-      article: parseData.articles,
-      loading: false,
-    });
+    this.setState({ page: this.state.page - 1 })
+    this.UpdateNews();
   };
 
   HandleNextClick = async () => {
@@ -63,20 +56,9 @@ export default class News extends Component {
       Math.ceil(this.state.totalResult / this.props.pageSize)
     ) {
     } else {
-      const url = `https://newsapi.org/v2/top-headlines?country=${
-        this.props.country
-      }&category=${this.props.category}&apiKey=a77010d6d7204f25b584d678362aca6b&pageSize=${
-        this.props.pageSize
-      }&page=${this.state.page + 1}`;
-      this.setState({ loading: true });
-      let data = await fetch(url);
-      let parseData = await data.json();
-      this.setState({
-        page: this.state.page + 1,
-        article: parseData.articles,
-        loading: false,
-      });
-      console.log(this.state.page);
+      this.setState({ page: this.state.page + 1 })
+      this.UpdateNews();
+
     }
   };
 
@@ -101,7 +83,7 @@ export default class News extends Component {
                     imageUrl={element.urlToImage}
                     ewsUrl={element.url}
                     author={element.author}
-                    upDate={element.publishedAt.slice(0,10)}
+                    upDate={element.publishedAt.slice(0, 10)}
                     source={element.source.name}
                   />
                 </div>
@@ -120,7 +102,7 @@ export default class News extends Component {
           <button
             disabled={
               this.state.page + 1 >
-              Math.ceil(this.state.totalResult / this.props.pageSize)
+                Math.ceil(this.state.totalResult / this.props.pageSize)
                 ? true
                 : false
             }
