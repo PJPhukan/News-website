@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 export class Navber extends Component {
   render() {
     return (
-      <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="position-sticky">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
               NewsMonkey
