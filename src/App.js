@@ -10,7 +10,7 @@ import {
 import LoadingBar from 'react-top-loading-bar'
 
 export default class App extends Component {
-
+  apikey = process.env.REACT_APP_NEWS_API;
   state={
     progress:0
   }
@@ -29,17 +29,19 @@ export default class App extends Component {
             // onLoaderFinished={() => setProgress(0)}
           />
           <Routes>
-            <Route exact path='/' element={<News setPrograss={this.setPrograss}  key="general" pageSize={15} country="in" category="general" />}></Route>
-            <Route exact path='/business' element={<News setPrograss={this.setPrograss}  key="business" pageSize={15} country="in" category="business" />}></Route>
-            <Route exact path='/entertainment' element={<News setPrograss={this.setPrograss}  key="entertainment" pageSize={15} country="in" ategory="entertainment" />}></Route>
-            <Route exact path='/general' element={<News setPrograss={this.setPrograss}  key="general" pageSize={15} country="in" category="general" />}></Route>
-            <Route exact path='/health' element={<News setPrograss={this.setPrograss}  key="health" pageSize={15} country="in" category="health" />}></Route>
-            <Route exact path='/science' element={<News setPrograss={this.setPrograss}  key="science" pageSize={15} country="in" category="science" />}></Route>
-            <Route exact path='/sports' element={<News setPrograss={this.setPrograss}  key="sports" pageSize={15} country="in" category="sports" />}></Route>
-            <Route exact path='/technology' element={<News setPrograss={this.setPrograss}  key="technology" pageSize={15} country="in" category="technology" />}></Route>
+            <Route exact path='/' element={<News setPrograss={this.setPrograss} apiKey={this.apikey}   key="general" pageSize={15} country="in" category="general" />}></Route>
+            <Route exact path='/business' element={<News setPrograss={this.setPrograss} apiKey={this.apikey}   key="business" pageSize={15} country="in" category="business" />}></Route>
+            <Route exact path='/entertainment' element={<News setPrograss={this.setPrograss} apiKey={this.apikey}   key="entertainment" pageSize={15} country="in" ategory="entertainment" />}></Route>
+            <Route exact path='/general' element={<News setPrograss={this.setPrograss} apiKey={this.apikey}   key="general" pageSize={15} country="in" category="general" />}></Route>
+            <Route exact path='/health' element={<News setPrograss={this.setPrograss} apiKey={this.apikey}   key="health" pageSize={15} country="in" category="health" />}></Route>
+            <Route exact path='/science' element={<News setPrograss={this.setPrograss} apiKey={this.apikey}   key="science" pageSize={15} country="in" category="science" />}></Route>
+            <Route exact path='/sports' element={<News setPrograss={this.setPrograss} apiKey={this.apikey}   key="sports" pageSize={15} country="in" category="sports" />}></Route>
+            <Route exact path='/technology' element={<News setPrograss={this.setPrograss} apiKey={this.apikey}   key="technology" pageSize={15} country="in" category="technology" />}></Route>
           </Routes>
         </Router>
       </div>
     )
   }
 }
+
+// a77010d6d7204f25b584d678362aca6b
