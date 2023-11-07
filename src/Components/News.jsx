@@ -14,7 +14,6 @@ export default function News(props) {
     return (string[0].toUpperCase() +
     string.slice(1));
   }
-  document.title = `NewMonkey-${capitalizeFLetter(props.category)}`  
 
 
   const UpdateNews = async () => {
@@ -33,24 +32,28 @@ export default function News(props) {
   }
 
   useEffect(() => {
+    document.title = `NewMonkey-${capitalizeFLetter(props.category)}`  
+
     UpdateNews();
+    //eslint-disable-next-line
   }, [])
 
 
 
 
   const fetchMoreData = async () => {
-    setPage(page + 1)
     const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&pageSize=${props.pageSize}&page=${page + 1}`;
+    setPage(page + 1)
     let data = await fetch(url);
     let parseData = await data.json();
     setarticle(article.concat(parseData.articles));
     setTotalResult(parseData.totalResults)
   };
 
+ 
   return (
     <>
-      <h2 className="text-center my-4">NewsMonkey - Top Headlines</h2>
+      <h2 className="text-center"style={{'margin':'35px 0','marginTop':'5rem'}}>NewsMonkey - Top Headlines</h2>
       {loading && <Spinner />}
 
       <InfiniteScroll

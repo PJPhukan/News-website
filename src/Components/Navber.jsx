@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 const Navber=()=>{
     return (
-      <div className="position-sticky">
+      <div className="fixed-top">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
