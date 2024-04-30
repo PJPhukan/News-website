@@ -1,7 +1,7 @@
 import React from "react";
 const NewsItem=(props)=>{
     return (
-      <div className="card">
+      <div className="card position-relative">
         <img
           src={
             !props.imageUrl
@@ -24,7 +24,7 @@ const NewsItem=(props)=>{
             Read more
           </a>
         </div>
-        <span className="position-absolute top-0  translate-middle badge rounded-pill bg-danger" style={{left:"89%",'zIndex':1}}>
+        <span className="position-absolute top-10  translate-middle badge rounded-pill bg-danger" style={{right:"-39px",'zIndex':1000,top:"10px"}}>
           {props.source}
         </span>
       </div>
